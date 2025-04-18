@@ -1,8 +1,13 @@
 name: Continuous Delivery
+
+permissions:
+  contents: read
+  actions: read
+  security-events: write
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   deliver:
