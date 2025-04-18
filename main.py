@@ -17,6 +17,10 @@ async def root():
 async def funcaoteste():
     return {"teste": True, "num_aleatorio": random.randint(0, 20000)}
 
+@app.get("/funcaoteste3")
+async def funcaoteste():
+    return {"teste": True, "num_aleatorio": random.randint(10, 20)}
+
 @app.post("/estudantes/cadastro")
 async def create_estudante(estudante: Estudante):
     return estudante
