@@ -1,4 +1,10 @@
 name: Continuous Integration
+
+permissions:
+  contents: read          
+  actions: read           
+  security-events: write  
+
 on:
   pull_request:
     branches:
